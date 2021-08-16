@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./../public/css/game.css">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="./public/controller/connect.js"></script>
+    <title>tik-tak-toe</title>
+</head>
+<body>
+    <h1>tik-tak-toe</h1>
+    <br>
+    <br>
+    <h3>players :</h3>
+    <div class="pOne">player one</div>
+    <div class="pTwo">player two</div>
+    <div class="tPlayer">turn of <span>player one</span></div>
+    <div class="grid-container">
+        <div class="grid-item 1"></div>
+        <div class="grid-item 2"></div>
+        <div class="grid-item 3"></div>
+        <div class="grid-item 4"></div>
+        <div class="grid-item 5"></div>
+        <div class="grid-item 6"></div>  
+        <div class="grid-item 7"></div>
+        <div class="grid-item 8"></div>
+        <div class="grid-item 9"></div>  
+    </div>
+    <button class="restart">restart</button>
+    <button class="reset">reset</button>
+    <!--next time put all dynamic variables in one file and the function in others-->
+</body>
+</html>

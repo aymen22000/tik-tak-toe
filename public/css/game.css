@@ -1,0 +1,38 @@
+@media screen and (max-width: 900px){
+    .grid-container {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ffffff;
+    padding: 10px;
+    grid-template-rows: 100px 100px 100px;
+    }
+}
+@media screen and (min-width: 901px){
+    .grid-container {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ffffff;
+    padding: 10px;
+    grid-template-rows: 150px 150px 150px;
+    }
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+h3, .instruction{
+    margin-left: 20%;
+}
+#turn{
+    text-align: center;
+}
