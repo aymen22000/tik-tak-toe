@@ -76,8 +76,14 @@ io.on('disconnect', ()=>{
     console.log('a user has disconnected');
 })
 
+app.use(express.static(__dirname));
+
+app.set('view engine','ejs')
+
+app.set('views',__dirname)
+
 app.get("/",(req,res)=>{
-    res.render("index.html")
+    res.render("index.ejs")
 })
 
 server.listen(3000, ()=>{
