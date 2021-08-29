@@ -1,4 +1,6 @@
-const socket = io('http://localhost:3000')
+const socket = io('/')
+
+//http://localhost:3000=> this is in case won't work
 
 const name = prompt('your name')
 

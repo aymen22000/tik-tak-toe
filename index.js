@@ -76,6 +76,10 @@ io.on('disconnect', ()=>{
     console.log('a user has disconnected');
 })
 
+app.get("/",(req,res)=>{
+    res.render("index.html")
+})
+
 server.listen(3000, ()=>{
     console.log('we are connected');
 })
