@@ -10,6 +10,8 @@ const server = http.createServer(app);
 
 const rules = require('./model/rules');
 
+const PORT = process.env.PORT || 3000;
+
 let rooms = [];
 
 let playerSocket ={};
@@ -86,6 +88,6 @@ app.get("/",(req,res)=>{
     res.render("index.ejs")
 })
 
-server.listen(3000, ()=>{
+server.listen(PORT, ()=>{
     console.log('we are connected');
 })
